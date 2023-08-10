@@ -38,7 +38,9 @@ export default function Navbar() {
 
   return (
     <nav className="flex flex-col items-center mt-3 border-b border-white/10 w-full">
-      <h1 className="text-xl">📚 echubooks</h1>
+      <h1 className="text-3xl">
+        <b className="text-violet-500">e</b>Bookstore
+      </h1>
       <div className="flex gap-6 mt-2">
         {navLinks.map((link, i) => {
           let isActive = pathname === link.href;
