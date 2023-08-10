@@ -1,4 +1,5 @@
-# Desafío Frontend de Midudev 🚀
+# eBookstore
+Prueba Técnica frontend de Midudev
 web oficial: [Pruebas Técnicas](https://pruebastecnicas.com/)	
 
 ### Built with
