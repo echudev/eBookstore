@@ -1,8 +1,8 @@
 import getBooks from "@/lib/getBooks";
-import MyList from "./MyList";
+import MyBooks from "../../components/mybooks";
 
 export default async function MyListPage() {
   const books = await getBooks();
 
-  return <MyList books={books} />;
+  return <MyBooks books={books} />;
 }

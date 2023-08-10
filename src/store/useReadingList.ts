@@ -6,7 +6,7 @@ export type State = {
 }
 
 export const useReadingList = create<State>((set) => ({
-  readingList: [],
+  readingList: JSON.parse(localStorage.getItem('readingList') || '[]'),
   toggleBook: (id) => set((state) => (
     {
        readingList: state.readingList.includes(id) 
