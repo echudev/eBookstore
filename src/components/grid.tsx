@@ -52,7 +52,7 @@ export default function Grid({ books, genres }: GridProps) {
             ))}
           </select>
         </div>
-        <div className="flex flex-col items-center rounded border border-yellow-200 p-2">
+        <div className="flex flex-col items-center p-2">
           <p className="">Coincidencias</p>
           <p className="flex items-center justify-center mt-1 bg-yellow-300 h-8 w-8 text-black font-bold rounded-full">
             {matches.length}
