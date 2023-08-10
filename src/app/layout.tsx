@@ -20,7 +20,7 @@ const ubuntu = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "echubooks",
+  title: "eBookstore",
   description: "prueba técnica Midudev",
 };
 
