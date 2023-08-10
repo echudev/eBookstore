@@ -7,6 +7,11 @@ import mark from "../assets/mark.png";
 export default function Book({ book }: { book: BookMetadata }) {
   const { toggleBook, readingList } = useReadingList();
 
+  const handleClick = (bookID: string) => {
+    toggleBook(bookID);
+    localStorage.setItem("readingList", JSON.stringify(readingList));
+  };
+
   return (
     <li
       key={book.ISBN}
@@ -19,7 +24,7 @@ export default function Book({ book }: { book: BookMetadata }) {
           width={300}
           height={300}
           className="aspect-[9/14] object-cover rounded shadow-md shadow-black cursor-pointer"
-          onClick={() => toggleBook(book.ISBN)}
+          onClick={() => handleClick(book.ISBN)}
         />
         <Image
           src={mark}
