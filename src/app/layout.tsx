@@ -1,9 +1,23 @@
 import Navbar from "@/components/navbar";
 import "./globals.css";
+import localFont from "next/font/local";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const ubuntu = localFont({
+  src: [
+    {
+      path: "../../public/font/Ubuntu-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/font/Ubuntu-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-ubuntu",
+});
 
 export const metadata: Metadata = {
   title: "echubooks",
@@ -16,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
-      <body className={inter.className}>
+    <html lang="es" className={`${ubuntu.variable}`}>
+      <body>
         <main className="flex flex-col min-h-screen max-w-screen-lg m-auto">
           <Navbar />
           <section>{children}</section>
