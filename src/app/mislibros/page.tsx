@@ -1,4 +1,4 @@
-import getBooks from "@/lib/geBooks";
+import getBooks from "@/lib/getBooks";
 import MyList from "./MyList";
 
 export default async function MyListPage() {

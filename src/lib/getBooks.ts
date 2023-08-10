@@ -1,4 +1,4 @@
-import data from "../lib/books.json";
+import data from "./books.json";
 import { BookMetadata } from "../types/types";
 
 export default async function getBooks() {

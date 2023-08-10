@@ -1,5 +1,5 @@
 import Book from "@/components/book";
-import getBooks from "@/lib/geBooks";
+import getBooks from "@/lib/getBooks";
 
 export default async function Home() {
   const books = await getBooks();
