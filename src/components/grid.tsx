@@ -26,7 +26,7 @@ export default function Grid({ books, genres }: GridProps) {
   return (
     <>
       <div className="flex gap-7 px-10 py-6 items-center justify-center">
-        <div className="flex flex-col gap-3 p-2">
+        <div className="flex items-center flex-col gap-3 p-2">
           <label htmlFor="range">Páginas: {pages}</label>
           <input
             type="range"
@@ -37,7 +37,7 @@ export default function Grid({ books, genres }: GridProps) {
             onChange={(e) => setPages(e.target.value)}
           />
         </div>
-        <div className="flex flex-col gap-2 p-2">
+        <div className="flex items-center  flex-col gap-2 p-2">
           <label htmlFor="genre">Género</label>
           <select
             value={genre}
@@ -54,7 +54,7 @@ export default function Grid({ books, genres }: GridProps) {
         </div>
         <div className="flex flex-col items-center p-2">
           <p className="">Coincidencias</p>
-          <p className="flex items-center justify-center mt-1 bg-yellow-300 h-8 w-8 text-black font-bold rounded-full">
+          <p className="flex items-center shadow-black/50 shadow-md justify-center mt-1 bg-yellow-300 h-8 w-8 text-black font-bold rounded-full">
             {matches.length}
           </p>
         </div>
