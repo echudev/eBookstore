@@ -18,7 +18,7 @@ export default function Navbar() {
       id: 1,
       name: "Mis Libros",
       href: "/mislibros",
-      books: useReadingList.getState().readingList.length,
+      books: readingList.length,
     },
   ]);
 

@@ -1,6 +1,6 @@
 "use client";
 import Book from "@/components/book";
-import { BookMetadata } from "../types/types";
+import type { BookMetadata } from "../types/types";
 import { useState, useMemo } from "react";
 
 interface GridProps {

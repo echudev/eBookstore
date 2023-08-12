@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { BookMetadata } from "../types/types";
+import type { BookMetadata } from "../types/types";
 import { useReadingList } from "../store/useReadingList";
 import mark from "../assets/mark.png";
 
@@ -9,7 +9,6 @@ export default function Book({ book }: { book: BookMetadata }) {
 
   const handleClick = (bookID: string) => {
     toggleBook(bookID);
-    localStorage.setItem("readingList", JSON.stringify(readingList));
   };
 
   return (
@@ -22,8 +21,8 @@ export default function Book({ book }: { book: BookMetadata }) {
           src={book.cover}
           alt={book.title}
           width={300}
-          height={300}
-          className="aspect-[9/14] object-cover rounded shadow-md shadow-black cursor-pointer"
+          height={420}
+          className="aspect-[9/14] h-auto object-cover rounded shadow-md shadow-black cursor-pointer"
           onClick={() => handleClick(book.ISBN)}
         />
         <Image
@@ -33,8 +32,8 @@ export default function Book({ book }: { book: BookMetadata }) {
           height={20}
           className={
             readingList.includes(book.ISBN)
-              ? "absolute right-0 top-0 transition-all opacity-100"
-              : "absolute right-0 top-0 transition-all opacity-0"
+              ? "absolute right-0 top-0 transition-all opacity-100 w-auto"
+              : "absolute right-0 top-0 transition-all opacity-0 w-auto"
           }
         />
       </div>
