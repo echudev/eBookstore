@@ -1,6 +1,6 @@
 # eBookstore
-Prueba Técnica frontend de Midudev
-web oficial: [Pruebas Técnicas](https://pruebastecnicas.com/)	
+Prueba Técnica frontend de Midudev.
+Web oficial: [Pruebas Técnicas](https://pruebastecnicas.com/)	
 
 ### Built with
 
