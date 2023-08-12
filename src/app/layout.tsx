@@ -31,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${ubuntu.variable}`}>
-      <body>
+      <body className="font-ubuntu">
         <main className="flex flex-col min-h-screen max-w-screen-lg m-auto">
           <Navbar />
           <section>{children}</section>
