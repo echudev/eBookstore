@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
 import type { BookMetadata } from "../types/types";
-import { useReadingList } from "../store/useReadingList";
+import { useStore } from "../store/useReadingList";
 import mark from "../assets/mark.png";
 
 export default function Book({ book }: { book: BookMetadata }) {
-  const { toggleBook, readingList } = useReadingList();
+  const { readingList, toggleBook } = useStore();
 
   const handleClick = (bookID: string) => {
     toggleBook(bookID);

@@ -1,10 +1,10 @@
 "use client";
 import Book from "@/components/book";
 import type { BookMetadata } from "../types/types";
-import { useReadingList } from "@/store/useReadingList";
+import { useStore } from "@/store/useReadingList";
 
 export default function MyBooks({ books }: { books: BookMetadata[] }) {
-  const { readingList } = useReadingList();
+  const { readingList } = useStore();
 
   return (
     <ul className="relative grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4 place-items- center p-10">

@@ -2,10 +2,10 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { useReadingList } from "@/store/useReadingList";
+import { useStore } from "@/store/useReadingList";
 
 export default function Navbar() {
-  const { readingList, toggleBook } = useReadingList();
+  const { readingList, toggleBook } = useStore();
   const pathname = usePathname();
   const [navLinks, setNavLinks] = useState([
     {
