@@ -9,3 +9,4 @@ Prueba Técnica frontend de Midudev.
 - Styling: [Tailwind CSS](https://tailwindcss.com/)
 - Deployment: [Vercel](https://vercel.com/)
 - Store: [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)
+- Unit Test: [Jest](https://nextjs.org/docs/pages/building-your-application/optimizing/testing)
