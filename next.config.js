@@ -9,7 +9,6 @@ const nextConfig = {
       },
     ],
   },
-  swcMinify: true, // Enable SWC minification in production
 };
 
 module.exports = nextConfig;
