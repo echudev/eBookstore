@@ -64,6 +64,13 @@ export default function Grid({ books, genres }: GridProps) {
           <Book key={i} book={book} />
         ))}
       </ul>
+      <div>
+        {matches.length === 0 && (
+          <p className="text-center text-xl text-white/70 mt-10">
+            No hay coincidencias
+          </p>
+        )}
+      </div>
     </>
   );
 }

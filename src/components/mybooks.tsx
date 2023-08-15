@@ -9,8 +9,8 @@ export default function MyBooks({ books }: { books: BookMetadata[] }) {
   return (
     <ul className="relative grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4 place-items- center p-10">
       {readingList.length === 0 ? (
-        <p className="absolute text-xl flex justify-center items-center w-full h-full">
-          Aún no tienes libros en tu lista!
+        <p className="absolute text-xl text-white/70 flex justify-center items-center w-full h-full">
+          No hay libros en tu lista de lectura
         </p>
       ) : (
         books.map((book, i) => {
