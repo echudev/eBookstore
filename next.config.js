@@ -9,9 +9,6 @@ const nextConfig = {
       },
     ],
   },
-  future: {
-    webpack5: true, // If you're using Webpack 5
-  },
   swcMinify: true, // Enable SWC minification in production
 };
 
