@@ -1,4 +1,0 @@
-// This ensures Jest works in our Nestjs app as expected.
-{
-  "presets": ["next/babel"]
-}
