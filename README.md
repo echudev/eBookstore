@@ -12,5 +12,5 @@ Prueba Técnica frontend de Midudev.
 - Unit Test: [Jest](https://nextjs.org/docs/pages/building-your-application/optimizing/testing)
 
 Para la persistencia de datos con localstorage, se utiliza el middleware 'persist' de Zustand.
-Para evitar errores de hidratación entre Nextjs y el localstorage, se accede al localstorage usando useEffect,
-en el caso de Zustand/persist, creo hook personalizado useStore, el cual accede al store de Zustand mediante useEffect.
+Para evitar errores de hidratación entre Nextjs y el localstorage, se accede al localstorage usando useEffect.
+En el caso de Zustand/persist, creo hook personalizado useStore, el cual accede al store de Zustand mediante useEffect.
