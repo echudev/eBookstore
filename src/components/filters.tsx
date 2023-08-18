@@ -18,7 +18,7 @@ export default function Filters({ matches, genres }: FiltersProps) {
           type="range"
           min={5}
           max={1200}
-          defaultValue={1200}
+          value={filters.pages}
           className="accent-yellow-300"
           onChange={(e) => setPages(parseInt(e.target.value))}
         />
