@@ -11,7 +11,7 @@ export default function Filters({ matches, genres }: FiltersProps) {
   const { filters, setGenre, setPages } = useFilters();
 
   return (
-    <div className="flex gap-7 px-10 py-6 items-center justify-center">
+    <div className="flex flex-wrap gap-7 px-10 py-6 items-center justify-center">
       <div className="flex items-center flex-col gap-3 p-2">
         <label htmlFor="range">Páginas: {filters.pages}</label>
         <input
