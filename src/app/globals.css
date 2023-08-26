@@ -5,5 +5,11 @@
 :root {
   background-color: Canvas;
   color: CanvasText;
-  color-scheme: dark;
+  color-scheme:light dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: rgb(249, 255, 246);
+  }
 }

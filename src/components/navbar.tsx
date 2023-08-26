@@ -52,7 +52,7 @@ export default function Navbar() {
                 href={link.href}
                 className="relative hover:bg-white/10 rounded transition-all py-2 px-3"
               >
-                <p className={isActive ? "" : "text-white/70"}>{link.name}</p>
+                <p className={isActive ? "" : "opacity-70"}>{link.name}</p>
                 {link.id === 1 && link.books !== null && link.books > 0 && (
                   <div className="absolute top-1 -right-1 bg-yellow-300 text-neutral-800 font-bold rounded-full w-4 h-4 flex items-center justify-center text-xs">
                     {link.books}
