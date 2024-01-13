@@ -36,7 +36,7 @@ export default function RootLayout({
           <Navbar />
           <section>{children}</section>
           <footer className="mt-auto pb-3 text-center">
-            hecho con 💖 by echudev
+            by echudev © 2023
           </footer>
         </main>
       </body>
